@@ -1,70 +1,56 @@
-<html>
-    <head>
-        <title>Zadatak</title>
-        <style>
-            h1 {text-align: center;}
-            p {text-align: center}
-            div {text-align: center;}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-aaaaa {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+<!DOCTYPE>
+<html lang=en>
+<head>
+<meta charset="UTF-8">
+</head>
 
-            </style>
-    </head>
+
+<script>
+var prozor;
+function otvori(){
+prozor=window.open("","_blank","height=500,width=1000");
+}
+function zatvori(){
+
+prozor.close();
+     
+ }
+function stampaj(){
+window.print();
+}
+var x;
+function farbaj(){
+x=confirm("aaaaa");
+if(x){
+document.getElementsByTagName("p")[0].style.color="orange";
+      }
+ }
+var y;
+function resize(){
+y=confirm("bbbbb");
+if(y){
+document.getElementsByTagName("p")[0].style.fontSize="200%";
+      }
+ }
+ var p;
+ function pozadina(){
+ p=confirm("ppp");
+ if(p){
+ document.body.style.backgroundColor="black"
+     }
+}
+ 
+
+
+
+</script>
 <body>
-    
-    <h1>stefan vuksanovic</h1>
-    <h3>(pozarevac, 11. ??? 1989 — ziv je)</h3
-
-    <p>nebitan sadrzaj</p>
-<p>nebitan sadrzaj</p>
-<p>nebitan sadrzaj</p>
-    
-    <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/80/802126ef0a971c590067cf64ec8d57981479cf91_full.jpg" class="center">
-    <p>nebitan sadrzaj</p>
-<p>nebitan sadrzaj</p>
-<p>nebitan sadrzaj</p>
-<table>
-<tbody>
-<tr>
-<table border="3" bordercolor="black" width="300" bgcolor="white" class="center">
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-</tr>
-<tr>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-</tr>
-<tr>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-</tr>
-<tr>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-</tr>
-<tr>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-<td>sadrzaj</td>
-</tr>
-</tbody>
-
-</table>
-    
-
+<p>IGOR IMA VELIKU GLAVU</p>
+<input type="button" value="otvori" onmouseover="otvori();">
+<input type="button" value="zatvori" onclick="zatvori();">
+<input type="button" value="stampaj" onclick="stampaj();">
+<input type="button" value="farbaj" onclick="farbaj();">
+<input type="button" value="pozadina" onclick="pozadina();">
+<input type="button" value="promeni velicinu teksta" onmouseover="resize();">
 </body>
 </html>
